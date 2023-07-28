@@ -1311,6 +1311,11 @@ function Client:SummonBaggedItems(bag_item_id, bag_items_table) end
 ---@param to_slot? number # TODO: definition of parameter
 function Client:SummonItem(item_id, charges, aug1, aug2, aug3, aug4, aug5, attuned, to_slot) end
 
+
+---@param item_id number # item id of cursor item
+---@param charges? number # charges if applicable for an item
+function Client:SummonCursorItem(item_id, charges) end
+
 ---@return boolean
 function Client:TGB() end
 
