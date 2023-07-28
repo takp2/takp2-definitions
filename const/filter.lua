@@ -1,0 +1,33 @@
+---@meta
+
+---@class Filter
+---@field None number
+---@field GuildChat number
+---@field Socials number
+---@field GroupChat number
+---@field Shouts number
+---@field Auctions number
+---@field OOC number
+---@field BadWords number
+---@field PCSpells number
+---@field NPCSpells number
+---@field BardSongs number
+---@field SpellCrits number
+---@field MeleeCrits number
+---@field SpellDamage number
+---@field MyMisses number
+---@field OthersMiss number
+---@field OthersHit number
+---@field MissedMe number
+---@field DamageShields number
+---@field DOT number
+---@field PetHits number
+---@field PetMisses number
+---@field FocusEffects number
+---@field PetSpells number
+---@field HealOverTime number
+---@field Unknown25 number
+---@field Unknown26 number
+---@field Unknown27 number
+---@field Unknown28 number
+Filter = {}
