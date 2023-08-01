@@ -6,12 +6,12 @@
 ---@field valid boolean # returns false when a npc is invalid
 NPC = {}
 
----@param dist number # TODO: definition of parameter
+---@param dist? number # TODO: definition of parameter
 ---@param max_x number # TODO: definition of parameter
 ---@param min_x number # TODO: definition of parameter
 ---@param max_y number # TODO: definition of parameter
 ---@param min_y number # TODO: definition of parameter
----@param delay number # TODO: definition of parameter
+---@param delay? number # TODO: definition of parameter
 ---@param mindelay? number # TODO: definition of parameter
 function NPC:AI_SetRoambox(dist, max_x, min_x, max_y, min_y, delay, mindelay) end
 

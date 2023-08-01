@@ -11,7 +11,8 @@ function Spawn:CurrentNPCID() end
 
 function Spawn:Depop() end
 
-function Spawn:Disable() end
+---@param force_despawn? boolean # Force mob to despawn
+function Spawn:Disable(force_despawn) end
 
 function Spawn:Enable() end
 

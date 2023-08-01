@@ -15,8 +15,8 @@ function Door:ForceClose(sender, alt_mode) end
 ---@param sender Mob # TODO: definition of parameter
 function Door:ForceClose(sender) end
 
----@param sender Mob # TODO: definition of parameter
----@param alt_mode boolean # TODO: definition of parameter
+---@param sender? Mob # TODO: definition of parameter
+---@param alt_mode? boolean # TODO: definition of parameter
 function Door:ForceOpen(sender, alt_mode) end
 
 ---@param sender Mob # TODO: definition of parameter

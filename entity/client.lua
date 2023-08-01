@@ -464,15 +464,15 @@ function Client:GetExpeditionLockouts(name) end
 ---@return number
 function Client:GetFace() end
 
----@param char_id number # TODO: definition of parameter
----@param npc_id number # TODO: definition of parameter
+---@param character_id number # Character ID
+---@param npc_id number # NPC Type ID
 ---@param race number # TODO: definition of parameter
 ---@param class_ number # TODO: definition of parameter
 ---@param deity number # TODO: definition of parameter
 ---@param faction number # TODO: definition of parameter
 ---@param npc NPC # TODO: definition of parameter
 ---@return number
-function Client:GetFactionLevel(char_id, npc_id, race, class_, deity, faction, npc) end
+function Client:GetFactionLevel(character_id, npc_id, race, class_, deity, faction, npc) end
 
 ---@return boolean
 function Client:GetFeigned() end
@@ -819,12 +819,12 @@ function Client:MemSpell(spell_id, slot, update_client) end
 ---@return number
 function Client:MemmedCount() end
 
----@param zone number # TODO: definition of parameter
+---@param zone_id number # Zone ID
 ---@param x number # TODO: definition of parameter
 ---@param y number # TODO: definition of parameter
 ---@param z number # TODO: definition of parameter
 ---@param heading number # TODO: definition of parameter
-function Client:MovePC(zone, x, y, z, heading) end
+function Client:MovePC(zone_id, x, y, z, heading) end
 
 ---@param zone_id number # TODO: definition of parameter
 ---@param zone_version? number # TODO: definition of parameter
@@ -832,13 +832,13 @@ function Client:MovePC(zone, x, y, z, heading) end
 ---@overload fun(zone_name:string, zone_version?:number, msg_if_invalid?:boolean)
 function Client:MovePCDynamicZone(zone_id, zone_version, msg_if_invalid) end
 
----@param zone number # TODO: definition of parameter
+---@param zone_id number # Zone ID
 ---@param instance number # TODO: definition of parameter
 ---@param x number # TODO: definition of parameter
 ---@param y number # TODO: definition of parameter
 ---@param z number # TODO: definition of parameter
 ---@param heading number # TODO: definition of parameter
-function Client:MovePCInstance(zone, instance, x, y, z, heading) end
+function Client:MovePCInstance(zone_id, instance, x, y, z, heading) end
 
 ---@param zone_short_name string # TODO: definition of parameter
 ---@param x? number # TODO: definition of parameter
@@ -1048,7 +1048,8 @@ function Client:SendPath(target) end
 ---@param to Client # TODO: definition of parameter
 function Client:SendPEQZoneFlagInfo(to) end
 
-function Client:SendSound() end
+---@param sound_id number # sound id to send
+function Client:SendSound(sound_id) end
 
 function Client:SendToGuildHall() end
 
@@ -1108,13 +1109,13 @@ function Client:SetBaseGender(v) end
 ---@param v number # TODO: definition of parameter
 function Client:SetBaseRace(v) end
 
----@param to_zone number # TODO: definition of parameter
+---@param zone_id number # Zone ID
 ---@param to_instance? number # TODO: definition of parameter
 ---@param new_x? number # TODO: definition of parameter
 ---@param new_y? number # TODO: definition of parameter
 ---@param new_z? number # TODO: definition of parameter
 ---@param new_heading? number # TODO: definition of parameter
-function Client:SetBindPoint(to_zone, to_instance, new_x, new_y, new_z, new_heading) end
+function Client:SetBindPoint(zone_id, to_instance, new_x, new_y, new_z, new_heading) end
 
 ---@param new_creation_limit number # TODO: definition of parameter
 ---@param class_id? number # TODO: definition of parameter
@@ -1166,21 +1167,15 @@ function Client:SetEndurance(endur) end
 ---@param value number # TODO: definition of parameter
 function Client:SetEnvironmentDamageModifier(value) end
 
----@param char_id number # TODO: definition of parameter
----@param npc_id number # TODO: definition of parameter
----@param char_class number # TODO: definition of parameter
----@param char_race number # TODO: definition of parameter
----@param char_deity number # TODO: definition of parameter
-function Client:SetFactionLevel(char_id, npc_id, char_class, char_race, char_deity) end
+---@param character_id number # Character ID
+---@param npc_id number # NPC Type ID
+function Client:SetFactionLevel(character_id, npc_id) end
 
----@param char_id number # TODO: definition of parameter
+---@param character_id number # Character ID
 ---@param faction_id number # TODO: definition of parameter
----@param char_class number # TODO: definition of parameter
----@param char_race number # TODO: definition of parameter
----@param char_deity number # TODO: definition of parameter
 ---@param value number # TODO: definition of parameter
 ---@param temp number # TODO: definition of parameter
-function Client:SetFactionLevel2(char_id, faction_id, char_class, char_race, char_deity, value, temp) end
+function Client:SetFactionLevel2(character_id, faction_id, value, temp) end
 
 ---@param v boolean # TODO: definition of parameter
 function Client:SetFeigned(v) end
@@ -1333,7 +1328,7 @@ function Client:TakePlatinum(platinum, update_client) end
 ---@param ignore_cooldown? boolean # TODO: definition of parameter
 function Client:TaskSelector(task_array, ignore_cooldown) end
 
----@param character_id number # TODO: definition of parameter
+---@param character_id number # Character ID
 ---@return boolean
 function Client:TeleportGroupToPlayerByCharID(character_id) end
 
@@ -1341,7 +1336,7 @@ function Client:TeleportGroupToPlayerByCharID(character_id) end
 ---@return boolean
 function Client:TeleportGroupToPlayerByName(player_name) end
 
----@param character_id number # TODO: definition of parameter
+---@param character_id number # Character ID
 ---@return boolean
 function Client:TeleportRaidToPlayerByCharID(character_id) end
 
@@ -1349,7 +1344,7 @@ function Client:TeleportRaidToPlayerByCharID(character_id) end
 ---@return boolean
 function Client:TeleportRaidToPlayerByName(player_name) end
 
----@param character_id number # TODO: definition of parameter
+---@param character_id number # Character ID
 ---@return boolean
 function Client:TeleportToPlayerByCharID(character_id) end
 

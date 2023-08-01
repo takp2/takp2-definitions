@@ -806,13 +806,13 @@ function eq.fail_task(task_id) end
 ---@param task_set number # TODO: definition of parameter (and type this)
 function eq.first_task_in_set(task_set) end
 
----@param zone number # TODO: definition of parameter
+---@param zone_id number # Zone ID
 ---@param version number # TODO: definition of parameter
-function eq.flag_instance_by_group_leader(zone, version) end
+function eq.flag_instance_by_group_leader(zone_id, version) end
 
----@param zone number # TODO: definition of parameter
+---@param zone_id number # Zone ID
 ---@param version number # TODO: definition of parameter
-function eq.flag_instance_by_raid_leader(zone, version) end
+function eq.flag_instance_by_raid_leader(zone_id, version) end
 
 ---@param flymode number # TODO: definition of parameter
 function eq.fly_mode(flymode) end
@@ -1010,9 +1010,9 @@ function eq.get_rule(rule_name) end
 function eq.get_skill_name(skill_id) end
 
 ---@param zone string # TODO: definition of parameter
----@param instance_id number # TODO: definition of parameter
 ---@param condition_id number # TODO: definition of parameter (and type this)
-function eq.get_spawn_condition(zone, instance_id, condition_id) end
+---@param value? number # Value of spawn condition
+function eq.get_spawn_condition(zone, condition_id, value) end
 
 ---@param spell_id number # TODO: definition of parameter
 function eq.get_spell(spell_id) end
@@ -1621,15 +1621,14 @@ function eq.snow(weather) end
 ---@param x number # TODO: definition of parameter
 ---@param y number # TODO: definition of parameter
 ---@param z number # TODO: definition of parameter
----@param heading number # TODO: definition of parameter
+---@param heading? number # TODO: definition of parameter
 ---@return Mob # Newly spawned mob
 function eq.spawn2(npc_type, grid, unused, x, y, z, heading) end
 
 ---@param zone string # TODO: definition of parameter
----@param instance_id number # TODO: definition of parameter
 ---@param condition_id number # TODO: definition of parameter
 ---@param value number # TODO: definition of parameter
-function eq.spawn_condition(zone, instance_id, condition_id, value) end
+function eq.spawn_condition(zone, condition_id, value) end
 
 ---@param spawn2_id number # TODO: definition of parameter
 function eq.spawn_from_spawn2(spawn2_id) end

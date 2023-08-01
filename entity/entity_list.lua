@@ -340,3 +340,6 @@ function EntityList:SignalBotByBotName(bot_name, signal_id) end
 ---@param npc_id number # TODO: definition of parameter
 ---@param signal number # TODO: definition of parameter
 function EntityList:SignalMobsByNPCID(npc_id, signal) end
+
+---@param entity_id number # Entity ID to check mob is spawned
+function EntityList:IsMobSpawnedByEntityID(entity_id) end
