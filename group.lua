@@ -6,19 +6,19 @@
 ---@field valid boolean # returns false when a group is invalid
 Group = {}
 
----@param caster Mob # TODO: definition of parameter
----@param spell_id number # TODO: definition of parameter
+---@param caster Mob #
+---@param spell_id number #
 function Group:CastGroupSpell(caster, spell_id) end
 
 function Group:DisbandGroup() end
 
----@param expedition_name string # TODO: definition of parameter
----@param event_name string # TODO: definition of parameter
----@param max_check_count number # TODO: definition of parameter
+---@param expedition_name string #
+---@param event_name string #
+---@param max_check_count number #
 function Group:DoesAnyMemberHaveExpeditionLockout(expedition_name, event_name, max_check_count) end
 
----@param expedition_name string # TODO: definition of parameter
----@param event_name string # TODO: definition of parameter
+---@param expedition_name string #
+---@param event_name string #
 function Group:DoesAnyMemberHaveExpeditionLockout(expedition_name, event_name) end
 
 function Group:GetAverageLevel() end
@@ -33,54 +33,54 @@ function Group:GetLeaderName() end
 
 function Group:GetLowestLevel() end
 
----@param member_index number # TODO: definition of parameter
+---@param member_index number #
 function Group:GetMember(member_index) end
 
----@param other Mob # TODO: definition of parameter
+---@param other Mob #
 function Group:GetTotalGroupDamage(other) end
 
 function Group:GroupCount() end
 
----@param sender Mob # TODO: definition of parameter
----@param language number # TODO: definition of parameter
----@param message string # TODO: definition of parameter
+---@param sender Mob #
+---@param language number #
+---@param message string #
 function Group:GroupMessage(sender, language, message) end
 
----@param sender Mob # TODO: definition of parameter
----@param message string # TODO: definition of parameter
+---@param sender Mob #
+---@param message string #
 function Group:GroupMessage(sender, message) end
 
----@param mob Mob # TODO: definition of parameter
+---@param mob Mob #
 function Group:IsGroupMember(mob) end
 
----@param leader Mob # TODO: definition of parameter
+---@param leader Mob #
 function Group:IsLeader(leader) end
 
----@param leader Mob # TODO: definition of parameter
+---@param leader Mob #
 function Group:SetLeader(leader) end
 
----@param exp number # TODO: definition of parameter
----@param other Mob # TODO: definition of parameter
+---@param exp number #
+---@param other Mob #
 function Group:SplitExp(exp, other) end
 
----@param copper number # TODO: definition of parameter
----@param silver number # TODO: definition of parameter
----@param gold number # TODO: definition of parameter
----@param platinum number # TODO: definition of parameter
----@param splitter Client # TODO: definition of parameter
+---@param copper number #
+---@param silver number #
+---@param gold number #
+---@param platinum number #
+---@param splitter Client #
 function Group:SplitMoney(copper, silver, gold, platinum, splitter) end
 
----@param copper number # TODO: definition of parameter
----@param silver number # TODO: definition of parameter
----@param gold number # TODO: definition of parameter
----@param platinum number # TODO: definition of parameter
+---@param copper number #
+---@param silver number #
+---@param gold number #
+---@param platinum number #
 function Group:SplitMoney(copper, silver, gold, platinum) end
 
----@param sender Mob # TODO: definition of parameter
----@param zone_id number # TODO: definition of parameter
----@param instance_id number # TODO: definition of parameter
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
----@param h number # TODO: definition of parameter
+---@param sender Mob #
+---@param zone_id number #
+---@param instance_id number #
+---@param x number #
+---@param y number #
+---@param z number #
+---@param h number #
 function Group:TeleportGroup(sender, zone_id, instance_id, x, y, z, h) end

@@ -34,13 +34,13 @@ function Item:AugDistiller() end
 
 function Item:AugRestrict() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number #
 function Item:AugSlotType(i) end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number #
 function Item:AugSlotUnk2(i) end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number #
 function Item:AugSlotVisible(i) end
 
 function Item:AugType() end

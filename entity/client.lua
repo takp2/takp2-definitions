@@ -12,94 +12,94 @@ function Client:AccountID() end --- AccountID is a unique identifier for the acc
 ---@return string
 function Client:AccountName() end --- AccountName is the login name used in the loginserver
 
----@param points number # TODO: definition of parameter
+---@param points number #
 function Client:AddAAPoints(points) end
 
----@param currency number # TODO: definition of parameter
----@param amount number # TODO: definition of parameter
+---@param currency number #
+---@param amount number #
 function Client:AddAlternateCurrencyValue(currency, amount) end
 
----@param radiant number # TODO: definition of parameter
----@param ebon number # TODO: definition of parameter
+---@param radiant number #
+---@param ebon number #
 function Client:AddCrystals(radiant, ebon) end
 
----@param add_exp number # TODO: definition of parameter
----@param conlevel? number # TODO: definition of parameter
----@param resexp? boolean # TODO: definition of parameter
+---@param add_exp number #
+---@param conlevel? number #
+---@param resexp? boolean #
 function Client:AddEXP(add_exp, conlevel, resexp) end
 
----@param expedition_name string # TODO: definition of parameter
----@param event_name string # TODO: definition of parameter
----@param seconds number # TODO: definition of parameter
----@param uuid? string # TODO: definition of parameter
+---@param expedition_name string #
+---@param event_name string #
+---@param seconds number #
+---@param uuid? string #
 function Client:AddExpeditionLockout(expedition_name, event_name, seconds, uuid) end
 
----@param expedition_name string # TODO: definition of parameter
----@param event_name string # TODO: definition of parameter
----@param seconds number # TODO: definition of parameter
----@param uuid? string # TODO: definition of parameter
+---@param expedition_name string #
+---@param event_name string #
+---@param seconds number #
+---@param uuid? string #
 function Client:AddExpeditionLockoutDuration(expedition_name, event_name, seconds, uuid) end
 
----@param item_table table # TODO: definition of parameter
+---@param item_table table #
 function Client:AddItem(item_table) end
 
----@param theme_id number # TODO: definition of parameter
+---@param theme_id number #
 function Client:AddLDoNLoss(theme_id) end
 
----@param theme_id number # TODO: definition of parameter
+---@param theme_id number #
 function Client:AddLDoNWin(theme_id) end
 
----@param exp_pct number # TODO: definition of parameter
----@param max_level? number # TODO: definition of parameter
----@param ignore_mods? boolean # TODO: definition of parameter
+---@param exp_pct number #
+---@param max_level? number #
+---@param ignore_mods? boolean #
 function Client:AddLevelBasedExp(exp_pct, max_level, ignore_mods) end
 
----@param copper number # TODO: definition of parameter
----@param silver number # TODO: definition of parameter
----@param gold number # TODO: definition of parameter
----@param platinum number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param copper number #
+---@param silver number #
+---@param gold number #
+---@param platinum number #
+---@param update_client? boolean #
 function Client:AddMoneyToPP(copper, silver, gold, platinum, update_client) end
 
----@param platinum number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param platinum number #
+---@param update_client? boolean #
 function Client:AddPlatinum(platinum, update_client) end
 
----@param points number # TODO: definition of parameter
+---@param points number #
 function Client:AddPVPPoints(points) end
 
----@param skill_id number # TODO: definition of parameter
----@param value number # TODO: definition of parameter
+---@param skill_id number #
+---@param value number #
 function Client:AddSkill(skill_id, value) end
 
 ---@return number
 function Client:Admin() end
 
----@param spell_id number # TODO: definition of parameter
----@param duration? number # TODO: definition of parameter
----@param allow_pets? boolean # TODO: definition of parameter
----@param allow_bots? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param duration? number #
+---@param allow_pets? boolean #
+---@param allow_bots? boolean #
 function Client:ApplySpell(spell_id, duration, allow_pets, allow_bots) end
 
----@param spell_id number # TODO: definition of parameter
----@param duration? number # TODO: definition of parameter
----@param allow_pets? boolean # TODO: definition of parameter
----@param allow_bots? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param duration? number #
+---@param allow_pets? boolean #
+---@param allow_bots? boolean #
 function Client:ApplySpellGroup(spell_id, duration, allow_pets, allow_bots) end
 
----@param spell_id number # TODO: definition of parameter
----@param duration number # TODO: definition of parameter
----@param allow_pets? boolean # TODO: definition of parameter
----@param is_raid_group_only? boolean # TODO: definition of parameter
----@param allow_bots? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param duration number #
+---@param allow_pets? boolean #
+---@param is_raid_group_only? boolean #
+---@param allow_bots? boolean #
 function Client:ApplySpellRaid(spell_id, duration, allow_pets, is_raid_group_only, allow_bots) end
 
----@param task_id number # TODO: definition of parameter
----@param npc_id? number # TODO: definition of parameter
----@param enforce_level_requirement? boolean # TODO: definition of parameter
+---@param task_id number #
+---@param npc_id? number #
+---@param enforce_level_requirement? boolean #
 function Client:AssignTask(task_id, npc_id, enforce_level_requirement) end
 
----@param instance_id number # TODO: definition of parameter
+---@param instance_id number #
 function Client:AssignToInstance(instance_id) end
 
 function Client:AutoSplitEnabled() end
@@ -112,17 +112,17 @@ function Client:CalcATK() end
 ---@return number
 function Client:CalcCurrentWeight() end
 
----@param consider_level number # TODO: definition of parameter
----@param ignore_modifiers boolean # TODO: definition of parameter
+---@param consider_level number #
+---@param ignore_modifiers boolean #
 ---@return number
 function Client:CalcEXP(consider_level, ignore_modifiers) end
 
----@param other Mob # TODO: definition of parameter
----@param reverse boolean # TODO: definition of parameter
+---@param other Mob #
+---@param reverse boolean #
 ---@return number
 function Client:CalcPriceMod(other, reverse) end
 
----@param class_id? number # TODO: definition of parameter
+---@param class_id? number #
 function Client:CampAllBots(class_id) end
 
 ---@param short_name string
@@ -130,85 +130,85 @@ function Client:CampAllBots(class_id) end
 ---@return boolean
 function Client:CanEnterZone(short_name, instance_version) end
 
----@param skill_id number # TODO: definition of parameter
+---@param skill_id number #
 ---@return boolean
 function Client:CanHaveSkill(skill_id) end
 
----@param copper number # TODO: definition of parameter
----@param silver number # TODO: definition of parameter
----@param gold number # TODO: definition of parameter
----@param platinum number # TODO: definition of parameter
+---@param copper number #
+---@param silver number #
+---@param gold number #
+---@param platinum number #
 function Client:CashReward(copper, silver, gold, platinum) end
 
----@param last_name string # TODO: definition of parameter
+---@param last_name string #
 function Client:ChangeLastName(last_name) end
 
 ---@return number
 function Client:CharacterID() end
 
----@param skill_id number # TODO: definition of parameter
----@param target Mob # TODO: definition of parameter
----@param chance_mod? number # TODO: definition of parameter
+---@param skill_id number #
+---@param target Mob #
+---@param chance_mod? number #
 function Client:CheckIncreaseSkill(skill_id, target, chance_mod) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 function Client:CheckSpecializeIncrease(spell_id) end
 
 function Client:ClearCompassMark() end
 
----@param zone_id number # TODO: definition of parameter
+---@param zone_id number #
 function Client:ClearPEQZoneFlag(zone_id) end
 
----@param zone_id number # TODO: definition of parameter
+---@param zone_id number #
 function Client:ClearZoneFlag(zone_id) end
 
 ---@return boolean
 function Client:Connected() end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return number
 function Client:CountAugmentEquippedByID(item_id) end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return number
 function Client:CountItem(item_id) end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return number
 function Client:CountItemEquippedByID(item_id) end
 
----@param zone_name string # TODO: definition of parameter
----@param version number # TODO: definition of parameter
----@param duration number # TODO: definition of parameter
----@param expedition_name string # TODO: definition of parameter
----@param min_players number # TODO: definition of parameter
----@param max_players number # TODO: definition of parameter
----@param disable_messages? boolean # TODO: definition of parameter
+---@param zone_name string #
+---@param version number #
+---@param duration number #
+---@param expedition_name string #
+---@param min_players number #
+---@param max_players number #
+---@param disable_messages? boolean #
 ---@return Expedition
 ---@overload fun(expedition_table:table):Expedition
 function Client:CreateExpedition(zone_name, version, duration, expedition_name, min_players, max_players, disable_messages) end
 
----@param dz_template_id number # TODO: definition of parameter
+---@param dz_template_id number #
 function Client:CreateExpeditionFromTemplate(dz_template_id) end
 
----@param task_id number # TODO: definition of parameter
+---@param task_id number #
 ---@param dz_table table # table of dz instances
 function Client:CreateTaskDynamicZone(task_id, dz_table) end
 
----@param type number # TODO: definition of parameter
----@param amt number # TODO: definition of parameter
+---@param type number #
+---@param amt number #
 ---@return boolean
 function Client:DecreaseByID(type, amt) end
 
----@param slot_id number # TODO: definition of parameter
----@param quantity number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param slot_id number #
+---@param quantity number #
+---@param update_client? boolean #
 function Client:DeleteItemInInventory(slot_id, quantity, update_client) end
 
----@param markdown string # TODO: definition of parameter
+---@param markdown string #
 function Client:DiaWnd(markdown) end
 
----@param markdown string # TODO: definition of parameter
+---@param markdown string #
 function Client:DialogueWindow(markdown) end
 
 function Client:DisableAreaEndRegen() end
@@ -221,74 +221,79 @@ function Client:DisableAreaRegens() end
 
 function Client:Disconnect() end
 
----@param slot_id number # TODO: definition of parameter
+---@param slot_id number #
 function Client:DropItem(slot_id) end
 
 function Client:Duck() end
 
----@param slot number # TODO: definition of parameter
----@param red number # TODO: definition of parameter
----@param green number # TODO: definition of parameter
----@param blue number # TODO: definition of parameter
----@param use_tint? number # TODO: definition of parameter
+---@param slot number #
+---@param red number #
+---@param green number #
+---@param blue number #
+---@param use_tint? number #
 function Client:DyeArmorBySlot(slot, red, green, blue, use_tint) end
 
----@param value number # TODO: definition of parameter
+---@param value number #
 function Client:EnableAreaEndRegen(value) end
 
----@param value number # TODO: definition of parameter
+---@param value number #
 function Client:EnableAreaHPRegen(value) end
 
----@param value number # TODO: definition of parameter
+---@param value number #
 function Client:EnableAreaManaRegen(value) end
 
----@param value number # TODO: definition of parameter
+---@param value number #
 function Client:EnableAreaRegens(value) end
 
----@param send_fail? boolean # TODO: definition of parameter
+---@param send_fail? boolean #
 function Client:EndSharedTask(send_fail) end
 
 function Client:Escape() end
 
----@param task number # TODO: definition of parameter
+---@param task number #
 function Client:FailTask(task) end
 
----@param sender Mob # TODO: definition of parameter
----@param type number # TODO: definition of parameter
----@param filter number # TODO: definition of parameter
----@param message string # TODO: definition of parameter
+---@param sender Mob #
+---@param type number #
+---@param filter number #
+---@param message string #
 function Client:FilteredMessage(sender, type, filter, message) end
 
 ---@return number
 function Client:FindEmptyMemSlot() end
 
----@param slot number # TODO: definition of parameter
+---@param slot number #
 ---@return number
 function Client:FindMemmedSpellBySlot(slot) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 ---@return number
 function Client:FindMemmedSpellBySpellID(spell_id) end
 
----@param spell_id number # TODO: definition of parameter (and type this)
+--- Find on cursor returns true if item_id is on cursor
+---@param item_id number # item id to find
+---@return boolean # true if item_id is on cursor
+function Client:FindOnCursor(item_id) end
+
+---@param spell_id number #
 ---@return number
 function Client:FindSpellBookSlotBySpellID(spell_id) end
 
----@param value number # TODO: definition of parameter
----@param target_x number # TODO: definition of parameter
----@param target_y number # TODO: definition of parameter
----@param target_z number # TODO: definition of parameter
----@param ignore_los? boolean # TODO: definition of parameter
----@param clipping? boolean # TODO: definition of parameter
+---@param value number #
+---@param target_x number #
+---@param target_y number #
+---@param target_z number #
+---@param ignore_los? boolean #
+---@param clipping? boolean #
 function Client:Fling(value, target_x, target_y, target_z, ignore_los, clipping) end
 
----@param guarantee? boolean # TODO: definition of parameter
+---@param guarantee? boolean #
 function Client:ForageItem(guarantee) end
 
 function Client:Freeze() end
 
----@param zone_id number # TODO: definition of parameter
----@param instance_version? number # TODO: definition of parameter
+---@param zone_id number #
+---@param instance_version? number #
 ---@return number
 function Client:GetAAEXPModifier(zone_id, instance_version) end
 
@@ -307,7 +312,7 @@ function Client:GetAFK() end
 ---@return number
 function Client:GetAccountAge() end
 
----@param flag string # TODO: definition of parameter (and type this)
+---@param flag string #
 ---@return string
 function Client:GetAccountFlag(flag) end
 
@@ -317,19 +322,19 @@ function Client:GetAggroCount() end
 ---@return number
 function Client:GetAllMoney() end
 
----@param currency number # TODO: definition of parameter
+---@param currency number #
 ---@return number
 function Client:GetAlternateCurrencyValue(currency) end
 
 ---@return number
 function Client:GetAnon() end
 
----@param slot_id number # TODO: definition of parameter (and type this)
----@param aug_slot number # TODO: definition of parameter (and type this)
+---@param slot_id number #
+---@param aug_slot number #
 ---@return number
 function Client:GetAugmentIDAt(slot_id, aug_slot) end
 
----@param slot_id number # TODO: definition of parameter (and type this)
+---@param slot_id number #
 ---@return number[] # item id array of augments
 function Client:GetAugmentIDsBySlotID(slot_id) end
 
@@ -357,35 +362,35 @@ function Client:GetBaseSTR() end
 ---@return number
 function Client:GetBaseWIS() end
 
----@param index? number # TODO: definition of parameter
+---@param index? number #
 ---@return number
 function Client:GetBindHeading(index) end
 
----@param index? number # TODO: definition of parameter
+---@param index? number #
 ---@return number
 function Client:GetBindX(index) end
 
----@param index? number # TODO: definition of parameter
+---@param index? number #
 ---@return number
 function Client:GetBindY(index) end
 
----@param index? number # TODO: definition of parameter
+---@param index? number #
 ---@return number
 function Client:GetBindZ(index) end
 
----@param index? number # TODO: definition of parameter
+---@param index? number #
 ---@return number
 function Client:GetBindZoneID(index) end
 
----@param class_id? number # TODO: definition of parameter
+---@param class_id? number #
 ---@return number
 function Client:GetBotCreationLimit(class_id) end
 
----@param class_id? number # TODO: definition of parameter
+---@param class_id? number #
 ---@return number
 function Client:GetBotRequiredLevel(class_id) end
 
----@param class_id? number # TODO: definition of parameter
+---@param class_id? number #
 ---@return number
 function Client:GetBotSpawnLimit(class_id) end
 
@@ -395,7 +400,7 @@ function Client:GetCarriedMoney() end
 ---@return number
 function Client:GetCarriedPlatinum() end
 
----@param faction_id number # TODO: definition of parameter (and type this)
+---@param faction_id number #
 ---@return number
 function Client:GetCharacterFactionLevel(faction_id) end
 
@@ -414,20 +419,20 @@ function Client:GetClientVersionBit() end
 ---@return number
 function Client:GetCorpseCount() end
 
----@param corpse number # TODO: definition of parameter (and type this)
+---@param corpse number #
 ---@return number
 function Client:GetCorpseID(corpse) end
 
----@param corpse number # TODO: definition of parameter (and type this)
----@param slot number # TODO: definition of parameter (and type this)
+---@param corpse number #
+---@param slot number #
 ---@return number
 function Client:GetCorpseItemAt(corpse, slot) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 ---@return number
 function Client:GetDiscSlotBySpellID(spell_id) end
 
----@param timer_id number # TODO: definition of parameter (and type this)
+---@param timer_id number #
 ---@return number
 function Client:GetDisciplineTimer(timer_id) end
 
@@ -437,8 +442,8 @@ function Client:GetDuelTarget() end
 ---@return number
 function Client:GetEXP() end
 
----@param zone_id number # TODO: definition of parameter
----@param instance_version? number # TODO: definition of parameter
+---@param zone_id number #
+---@param instance_version? number #
 ---@return number
 function Client:GetEXPModifier(zone_id, instance_version) end
 
@@ -464,15 +469,19 @@ function Client:GetExpeditionLockouts(name) end
 ---@return number
 function Client:GetFace() end
 
+--- Returns the faction level of the client with the given faction.
 ---@param character_id number # Character ID
----@param npc_id number # NPC Type ID
----@param race number # TODO: definition of parameter
----@param class_ number # TODO: definition of parameter
----@param deity number # TODO: definition of parameter
----@param faction number # TODO: definition of parameter
----@param npc NPC # TODO: definition of parameter
+---@param race number #
+---@param class_ number #
+---@param deity number #
+---@param faction number #
+---@param npc NPC #
 ---@return number
-function Client:GetFactionLevel(character_id, npc_id, race, class_, deity, faction, npc) end
+function Client:GetFactionLevel(character_id, race, class_, deity, faction, npc) end
+
+---@param npc NPC # NPC to check faction with
+---@return number
+function Client:GetFactionValue(npc) end
 
 ---@return boolean
 function Client:GetFeigned() end
@@ -510,7 +519,7 @@ function Client:GetIPExemption() end
 ---@return string
 function Client:GetIPString() end
 
----@param spell_id number # TODO: definition of parameter (and type this)
+---@param spell_id number #
 ---@return number
 function Client:GetInstrumentMod(spell_id) end
 
@@ -520,39 +529,39 @@ function Client:GetInventory() end
 ---@return boolean
 function Client:GetInvulnerableEnvironmentDamage() end
 
----@param slot_id number # TODO: definition of parameter (and type this)
+---@param slot_id number #
 ---@return number
 function Client:GetItemIDAt(slot_id) end
 
 ---@return number
 function Client:GetLDoNLosses() end
 
----@param theme number # TODO: definition of parameter (and type this)
+---@param theme number #
 ---@return number
 function Client:GetLDoNLossesTheme(theme) end
 
----@param theme number # TODO: definition of parameter (and type this)
+---@param theme number #
 ---@return number
 function Client:GetLDoNPointsTheme(theme) end
 
 ---@return number
 function Client:GetLDoNWins() end
 
----@param theme number # TODO: definition of parameter (and type this)
+---@param theme number #
 ---@return number
 function Client:GetLDoNWinsTheme(theme) end
 
----@param skill_id number # TODO: definition of parameter (and type this)
+---@param skill_id number #
 ---@return number
 function Client:GetLanguageSkill(skill_id) end
 
----@param min_level? number # TODO: definition of parameter (and type this)
----@param max_level? number # TODO: definition of parameter (and type this)
+---@param min_level? number #
+---@param max_level? number #
 ---@return number[] # an array of spell ids
 function Client:GetLearnableDisciplines(min_level, max_level) end
 
----@param expedition_name number # TODO: definition of parameter (and type this)
----@param event_name number # TODO: definition of parameter (and type this)
+---@param expedition_name number #
+---@param event_name number #
 ---@return string
 function Client:GetLockoutExpeditionUUID(expedition_name, event_name) end
 
@@ -562,20 +571,20 @@ function Client:GetMaxEndurance() end
 ---@return number[] # an array of spell ids
 function Client:GetMemmedSpells() end
 
----@param faction number # TODO: definition of parameter (and type this)
+---@param faction number #
 ---@return number
 function Client:GetModCharacterFactionLevel(faction) end
 
----@param type number # TODO: definition of parameter
----@param subtype number # TODO: definition of parameter
+---@param type number #
+---@param subtype number #
 ---@return number
 function Client:GetMoney(type, subtype) end
 
----@param starting_slot? number # TODO: definition of parameter (and type this)
+---@param starting_slot? number #
 ---@return number
 function Client:GetNextAvailableDisciplineSlot(starting_slot) end
 
----@param start? number # TODO: definition of parameter (and type this)
+---@param start? number #
 ---@return number
 function Client:GetNextAvailableSpellBookSlot(start) end
 
@@ -600,16 +609,16 @@ function Client:GetRaidPoints() end
 ---@return number
 function Client:GetRawItemAC() end
 
----@param skill_id number # TODO: definition of parameter (and type this)
+---@param skill_id number #
 ---@return number
 function Client:GetRawSkill(skill_id) end
 
----@param recipe_id number # TODO: definition of parameter
+---@param recipe_id number #
 ---@return number
 function Client:GetRecipeMadeCount(recipe_id) end
 
----@param min_level number # TODO: definition of parameter
----@param max_level number # TODO: definition of parameter
+---@param min_level number #
+---@param max_level number #
 ---@return number[] # an array of spell ids
 function Client:GetScriableableSpells(min_level, max_level) end
 
@@ -619,7 +628,7 @@ function Client:GetSkillPoints() end
 ---@return number
 function Client:GetSpellDamage() end
 
----@param slot_id number # TODO: definition of parameter
+---@param slot_id number #
 ---@return number
 function Client:GetSpellIDByBookSlot(slot_id) end
 
@@ -655,9 +664,9 @@ function GetZoneFlags() end
 
 function Client:GoFish() end
 
----@param aa_id number # TODO: definition of parameter
----@param points number # TODO: definition of parameter
----@param ignore_cost? number # TODO: definition of parameter (and type this)
+---@param aa_id number #
+---@param points number #
+---@param ignore_cost? number #
 ---@return boolean
 function Client:GrantAlternateAdvancementAbility(aa_id, points, ignore_cost) end
 
@@ -667,40 +676,40 @@ function Client:GuildID() end
 ---@return number
 function Client:GuildRank() end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return boolean
 function Client:HasAugmentEquippedByID(item_id) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 ---@return boolean
 function Client:HasDisciplineLearned(spell_id) end
 
----@param expedition_name string # TODO: definition of parameter
----@param event_name string # TODO: definition of parameter
+---@param expedition_name string #
+---@param event_name string #
 ---@return boolean
 function Client:HasExpeditionLockout(expedition_name, event_name) end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return boolean
 function Client:HasItemEquippedByID(item_id) end
 
----@param zone_id number # TODO: definition of parameter
+---@param zone_id number #
 ---@return boolean
 function Client:HasPEQZoneFlag(zone_id) end
 
----@param recipe_id number # TODO: definition of parameter
+---@param recipe_id number #
 ---@return boolean
 function Client:HasRecipeLearned(recipe_id) end
 
----@param skill_id number # TODO: definition of parameter
+---@param skill_id number #
 ---@return boolean
 function Client:HasSkill(skill_id) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 ---@return boolean
 function Client:HasSpellScribed(spell_id) end
 
----@param zone_id number # TODO: definition of parameter
+---@param zone_id number #
 ---@return boolean
 function Client:HasZoneFlag(zone_id) end
 
@@ -710,19 +719,19 @@ function Client:Hungry() end
 ---@return boolean
 function Client:InZone() end
 
----@param type number # TODO: definition of parameter
----@param value number # TODO: definition of parameter
+---@param type number #
+---@param value number #
 function Client:IncStats(type, value) end
 
----@param skill_id number # TODO: definition of parameter
----@param value? number # TODO: definition of parameter
+---@param skill_id number #
+---@param value? number #
 function Client:IncreaseLanguageSkill(skill_id, value) end
 
----@param skill_id number # TODO: definition of parameter
----@param value? number # TODO: definition of parameter
+---@param skill_id number #
+---@param value? number #
 function Client:IncreaseSkill(skill_id, value) end
 
----@param aa number # TODO: definition of parameter
+---@param aa number #
 function Client:IncrementAA(aa) end
 
 ---@return boolean
@@ -752,34 +761,34 @@ function Client:IsSitting() end
 ---@return boolean
 function Client:IsStanding() end
 
----@param task number # TODO: definition of parameter
+---@param task number #
 ---@return boolean
 function Client:IsTaskActive(task) end
 
----@param task number # TODO: definition of parameter
----@param activity number # TODO: definition of parameter
+---@param task number #
+---@param activity number #
 ---@return boolean
 function Client:IsTaskActivityActive(task, activity) end
 
----@param task number # TODO: definition of parameter
+---@param task number #
 ---@return boolean
 function Client:IsTaskCompleted(task) end
 
----@param item number # TODO: definition of parameter
+---@param item number #
 function Client:KeyRingAdd(item) end
 
----@param item number # TODO: definition of parameter
+---@param item number #
 ---@return boolean
 function Client:KeyRingCheck(item) end
 
 function Client:Kick() end
 
----@param min_level number # TODO: definition of parameter
----@param max_level number # TODO: definition of parameter
+---@param min_level number #
+---@param max_level number #
 ---@return number
 function Client:LearnDisciplines(min_level, max_level) end
 
----@param recipe number # TODO: definition of parameter
+---@param recipe number #
 function Client:LearnRecipe(recipe) end
 
 function Client:LeaveGroup() end
@@ -788,190 +797,190 @@ function Client:LoadPEQZoneFlags() end
 
 function Client:LoadZoneFlags() end
 
----@param lock boolean # TODO: definition of parameter
+---@param lock boolean #
 function Client:LockSharedTask(lock) end
 
----@param in_x number # TODO: definition of parameter
----@param in_y number # TODO: definition of parameter
----@param in_z number # TODO: definition of parameter
----@param count? number # TODO: definition of parameter
+---@param in_x number #
+---@param in_y number #
+---@param in_z number #
+---@param count? number #
 function Client:MarkSingleCompassLoc(in_x, in_y, in_z, count) end
 
----@param type number # TODO: definition of parameter
----@param priority number # TODO: definition of parameter
----@param fade_in number # TODO: definition of parameter
----@param fade_out number # TODO: definition of parameter
----@param duration number # TODO: definition of parameter
----@param message string # TODO: definition of parameter
+---@param type number #
+---@param priority number #
+---@param fade_in number #
+---@param fade_out number #
+---@param duration number #
+---@param message string #
 ---@overload fun(type:number, message:string)
 ---@overload fun(type:number, message:string, duration:number)
 function Client:Marquee(type, priority, fade_in, fade_out, duration, message) end
 
----@param skill_id number # TODO: definition of parameter (and type this)
+---@param skill_id number #
 ---@return number
 function Client:MaxSkill(skill_id) end
 
----@param spell_id number # TODO: definition of parameter
----@param slot number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param slot number #
+---@param update_client? boolean #
 function Client:MemSpell(spell_id, slot, update_client) end
 
 ---@return number
 function Client:MemmedCount() end
 
 ---@param zone_id number # Zone ID
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
----@param heading number # TODO: definition of parameter
+---@param x number #
+---@param y number #
+---@param z number #
+---@param heading? number #
 function Client:MovePC(zone_id, x, y, z, heading) end
 
----@param zone_id number # TODO: definition of parameter
----@param zone_version? number # TODO: definition of parameter
----@param msg_if_invalid? boolean # TODO: definition of parameter
+---@param zone_id number #
+---@param zone_version? number #
+---@param msg_if_invalid? boolean #
 ---@overload fun(zone_name:string, zone_version?:number, msg_if_invalid?:boolean)
 function Client:MovePCDynamicZone(zone_id, zone_version, msg_if_invalid) end
 
 ---@param zone_id number # Zone ID
----@param instance number # TODO: definition of parameter
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
----@param heading number # TODO: definition of parameter
+---@param instance number #
+---@param x number #
+---@param y number #
+---@param z number #
+---@param heading number #
 function Client:MovePCInstance(zone_id, instance, x, y, z, heading) end
 
----@param zone_short_name string # TODO: definition of parameter
----@param x? number # TODO: definition of parameter
----@param y? number # TODO: definition of parameter
----@param z? number # TODO: definition of parameter
----@param heading? number # TODO: definition of parameter
+---@param zone_short_name string #
+---@param x? number #
+---@param y? number #
+---@param z? number #
+---@param heading? number #
 function Client:MoveZone(zone_short_name, x, y, z, heading) end
 
----@param zone_short_name string # TODO: definition of parameter
----@param x? number # TODO: definition of parameter
----@param y? number # TODO: definition of parameter
----@param z? number # TODO: definition of parameter
----@param heading? number # TODO: definition of parameter
+---@param zone_short_name string #
+---@param x? number #
+---@param y? number #
+---@param z? number #
+---@param heading? number #
 function Client:MoveZoneGroup(zone_short_name, x, y, z, heading) end
 
----@param instance_id number # TODO: definition of parameter
----@param x? number # TODO: definition of parameter
----@param y? number # TODO: definition of parameter
----@param z? number # TODO: definition of parameter
----@param heading? number # TODO: definition of parameter
+---@param instance_id number #
+---@param x? number #
+---@param y? number #
+---@param z? number #
+---@param heading? number #
 function Client:MoveZoneInstance(instance_id, x, y, z, heading) end
 
----@param instance_id number # TODO: definition of parameter
----@param x? number # TODO: definition of parameter
----@param y? number # TODO: definition of parameter
----@param z? number # TODO: definition of parameter
----@param heading? number # TODO: definition of parameter
+---@param instance_id number #
+---@param x? number #
+---@param y? number #
+---@param z? number #
+---@param heading? number #
 function Client:MoveZoneInstanceGroup(instance_id, x, y, z, heading) end
 
----@param instance_id number # TODO: definition of parameter
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
----@param heading number # TODO: definition of parameter
+---@param instance_id number #
+---@param x number #
+---@param y number #
+---@param z number #
+---@param heading number #
 function Client:MoveZoneInstanceRaid(instance_id, x, y, z, heading) end
 
----@param instance_id number # TODO: definition of parameter
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
+---@param instance_id number #
+---@param x number #
+---@param y number #
+---@param z number #
 function Client:MoveZoneInstanceRaid(instance_id, x, y, z) end
 
----@param instance_id number # TODO: definition of parameter
+---@param instance_id number #
 function Client:MoveZoneInstanceRaid(instance_id) end
 
----@param zone_short_name string # TODO: definition of parameter
+---@param zone_short_name string #
 function Client:MoveZoneRaid(zone_short_name) end
 
----@param zone_short_name string # TODO: definition of parameter
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
+---@param zone_short_name string #
+---@param x number #
+---@param y number #
+---@param z number #
 function Client:MoveZoneRaid(zone_short_name, x, y, z) end
 
----@param zone_short_name string # TODO: definition of parameter
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
----@param heading number # TODO: definition of parameter
+---@param zone_short_name string #
+---@param x number #
+---@param y number #
+---@param z number #
+---@param heading number #
 function Client:MoveZoneRaid(zone_short_name, x, y, z, heading) end
 
 function Client:NotifyNewTitlesAvailable() end
 
----@param item_num number # TODO: definition of parameter
----@param where_to_check? number # TODO: definition of parameter
+---@param item_num number #
+---@param where_to_check? number #
 function Client:NukeItem(item_num, where_to_check) end
 
 function Client:OpenLFGuildWindow() end
 
----@param file string # TODO: definition of parameter
+---@param file string #
 function Client:PlayMP3(file) end
 
----@param title string # TODO: definition of parameter
----@param text string # TODO: definition of parameter
----@param popup_id? number # TODO: definition of parameter
----@param negative_id? number # TODO: definition of parameter
----@param button_type? number # TODO: definition of parameter
----@param duration? number # TODO: definition of parameter
----@param button_name_one? string # TODO: definition of parameter
----@param button_name_two? string # TODO: definition of parameter
----@param sound_controls? string # TODO: definition of parameter
+---@param title string #
+---@param text string #
+---@param popup_id? number #
+---@param negative_id? number #
+---@param button_type? number #
+---@param duration? number #
+---@param button_name_one? string #
+---@param button_name_two? string #
+---@param sound_controls? string #
 function Client:Popup(title, text, popup_id, negative_id, button_type, duration, button_name_one, button_name_two, sound_controls) end
 
----@param inst ItemInst # TODO: definition of parameter
+---@param inst ItemInst #
 ---@return boolean
 function Client:PushItemOnCursor(inst) end
 
----@param slot_id number # TODO: definition of parameter
----@param inst ItemInst # TODO: definition of parameter
+---@param slot_id number #
+---@param inst ItemInst #
 ---@return boolean
 function Client:PutItemInInventory(slot_id, inst) end
 
----@param text string # TODO: definition of parameter
----@param type number # TODO: definition of parameter
+---@param text string #
+---@param type number #
 function Client:QuestReadBook(text, type) end
 
----@param target Mob # TODO: definition of parameter
----@param copper? number # TODO: definition of parameter
----@param silver? number # TODO: definition of parameter
----@param gold? number # TODO: definition of parameter
----@param platinum? number # TODO: definition of parameter
----@param itemid? number # TODO: definition of parameter
----@param exp? number # TODO: definition of parameter
----@param faction? boolean # TODO: definition of parameter
+---@param target Mob #
+---@param copper? number #
+---@param silver? number #
+---@param gold? number #
+---@param platinum? number #
+---@param itemid? number #
+---@param exp? number #
+---@param faction? boolean #
 function Client:QuestReward(target, copper, silver, gold, platinum, itemid, exp, faction) end
 
----@param app PacketType # TODO: definition of parameter
----@param ack_req? boolean # TODO: definition of parameter
----@param client_connection_status? number # TODO: definition of parameter
----@param filter? number # TODO: definition of parameter
+---@param app PacketType #
+---@param ack_req? boolean #
+---@param client_connection_status? number #
+---@param filter? number #
 function Client:QueuePacket(app, ack_req, client_connection_status, filter) end
 
----@param book_name string # TODO: definition of parameter
----@param book_type number # TODO: definition of parameter
+---@param book_name string #
+---@param book_type number #
 function Client:ReadBookByName(book_name, book_type) end
 
 function Client:RefundAA() end
 
----@param expedition_name? string # TODO: definition of parameter
+---@param expedition_name? string #
 function Client:RemoveAllExpeditionLockouts(expedition_name) end
 
----@param expedition_name string # TODO: definition of parameter
----@param event_name string # TODO: definition of parameter
+---@param expedition_name string #
+---@param event_name string #
 function Client:RemoveExpeditionLockout(expedition_name, event_name) end
 
----@param item_id number # TODO: definition of parameter
----@param quantity? number # TODO: definition of parameter
+---@param item_id number #
+---@param quantity? number #
 function Client:RemoveItem(item_id, quantity) end
 
----@param theme_id number # TODO: definition of parameter
+---@param theme_id number #
 function Client:RemoveLDoNLoss(theme_id) end
 
----@param theme_id number # TODO: definition of parameter
+---@param theme_id number #
 function Client:RemoveLDoNWin(theme_id) end
 
 function Client:ResetAA() end
@@ -980,72 +989,72 @@ function Client:ResetAllDisciplineTimers() end
 
 function Client:ResetAllCastbarCooldowns() end
 
----@param aa_id number # TODO: definition of parameter
+---@param aa_id number #
 function Client:ResetAlternateAdvancementRank(aa_id) end
 
----@param slot number # TODO: definition of parameter
+---@param slot number #
 function Client:ResetCastbarCooldownBySlot(slot) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 function Client:ResetCastbarCooldownBySpellID(spell_id) end
 
----@param timer_id number # TODO: definition of parameter
+---@param timer_id number #
 function Client:ResetDisciplineTimer(timer_id) end
 
 function Client:ResetTrade() end
 
----@param id number # TODO: definition of parameter
----@param amount number # TODO: definition of parameter
+---@param id number #
+---@param amount number #
 function Client:RewardFaction(id, amount) end
 
----@param commit_now? number # TODO: definition of parameter
+---@param commit_now? number #
 function Client:Save(commit_now) end
 
 function Client:SaveBackup() end
 
----@param spell_id number # TODO: definition of parameter
----@param slot number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param slot number #
+---@param update_client? boolean #
 function Client:ScribeSpell(spell_id, slot, update_client) end
 
----@param min_level number # TODO: definition of parameter
----@param max_level number # TODO: definition of parameter
+---@param min_level number #
+---@param max_level number #
 ---@return number
 function Client:ScribeSpells(min_level, max_level) end
 
----@param type number # TODO: definition of parameter
----@param msg string # TODO: definition of parameter
+---@param type number #
+---@param msg string #
 function Client:SendColoredText(type, msg) end
 
 
----@param item_instance ItemInst # TODO: definition of parameter
+---@param item_instance ItemInst #
 function Client:SendItemScale(item_instance) end
 
----@param message string # TODO: definition of parameter
----@param ignore_status? number # TODO: definition of parameter (and type this)
+---@param message string #
+---@param ignore_status? number #
 function Client:SendGMCommand(message, ignore_status) end
 
----@param inst ItemInst # TODO: definition of parameter
+---@param inst ItemInst #
 function Client:SendItemScale(inst) end
 
----@param type number # TODO: definition of parameter
----@param priority number # TODO: definition of parameter
----@param fade_in number # TODO: definition of parameter
----@param fade_out number # TODO: definition of parameter
----@param duration number # TODO: definition of parameter
----@param message string # TODO: definition of parameter
+---@param type number #
+---@param priority number #
+---@param fade_in number #
+---@param fade_out number #
+---@param duration number #
+---@param message string #
 ---@overload fun(type:number, message:string)
 ---@overload fun(type:number, message:string, duration:number)
 function Client:SendMarqueeMessage(type, priority, fade_in, fade_out, duration, message) end
 
----@param caster Mob # TODO: definition of parameter
----@param spell_id number # TODO: definition of parameter
+---@param caster Mob #
+---@param spell_id number #
 function Client:SendOPTranslocateConfirm(caster, spell_id) end
 
 ---@param target Mob
 function Client:SendPath(target) end
 
----@param to Client # TODO: definition of parameter
+---@param to Client #
 function Client:SendPEQZoneFlagInfo(to) end
 
 ---@param sound_id number # sound id to send
@@ -1053,118 +1062,118 @@ function Client:SendSound(sound_id) end
 
 function Client:SendToGuildHall() end
 
----@param instance_type string # TODO: definition of parameter
----@param zone_short_name string # TODO: definition of parameter
----@param instance_version number # TODO: definition of parameter
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
----@param heading number # TODO: definition of parameter
----@param instance_identifier string # TODO: definition of parameter
----@param duration number # TODO: definition of parameter
+---@param instance_type string #
+---@param zone_short_name string #
+---@param instance_version number #
+---@param x number #
+---@param y number #
+---@param z number #
+---@param heading number #
+---@param instance_identifier string #
+---@param duration number #
 function Client:SendToInstance(instance_type, zone_short_name, instance_version, x, y, z, heading, instance_identifier, duration) end
 
----@param payload_id number # TODO: definition of parameter
----@param payload_value? string # TODO: definition of parameter
+---@param payload_id number #
+---@param payload_value? string #
 function Client:SendPayload(payload_id, payload_value) end
 
----@param site string # TODO: definition of parameter
+---@param site string #
 function Client:SendWebLink(site) end
 
----@param to Client # TODO: definition of parameter
+---@param to Client #
 function Client:SendZoneFlagInfo(to) end
 
----@param zone_id number # TODO: definition of parameter
----@param aa_modifier number # TODO: definition of parameter
----@param instance_version? number # TODO: definition of parameter
+---@param zone_id number #
+---@param aa_modifier number #
+---@param instance_version? number #
 function Client:SetAAEXPModifier(zone_id, aa_modifier, instance_version) end
 
----@param points number # TODO: definition of parameter
+---@param points number #
 function Client:SetAAPoints(points) end
 
----@param title string # TODO: definition of parameter
----@param save_to_database? boolean # TODO: definition of parameter
+---@param title string #
+---@param save_to_database? boolean #
 function Client:SetAATitle(title, save_to_database) end
 
----@param afk_flag number # TODO: definition of parameter
+---@param afk_flag number #
 function Client:SetAFK(afk_flag) end
 
----@param flag string # TODO: definition of parameter
----@param value string # TODO: definition of parameter
+---@param flag string #
+---@param value string #
 function Client:SetAccountFlag(flag, value) end
 
----@param currency number # TODO: definition of parameter
----@param amount number # TODO: definition of parameter
+---@param currency number #
+---@param amount number #
 function Client:SetAlternateCurrencyValue(currency, amount) end
 
----@param anon_flag number # TODO: definition of parameter
+---@param anon_flag number #
 function Client:SetAnon(anon_flag) end
 
----@param v number # TODO: definition of parameter
+---@param v number #
 function Client:SetBaseClass(v) end
 
----@param v number # TODO: definition of parameter
+---@param v number #
 function Client:SetBaseGender(v) end
 
----@param v number # TODO: definition of parameter
+---@param v number #
 function Client:SetBaseRace(v) end
 
 ---@param zone_id number # Zone ID
----@param to_instance? number # TODO: definition of parameter
----@param new_x? number # TODO: definition of parameter
----@param new_y? number # TODO: definition of parameter
----@param new_z? number # TODO: definition of parameter
----@param new_heading? number # TODO: definition of parameter
+---@param to_instance? number #
+---@param new_x? number #
+---@param new_y? number #
+---@param new_z? number #
+---@param new_heading? number #
 function Client:SetBindPoint(zone_id, to_instance, new_x, new_y, new_z, new_heading) end
 
----@param new_creation_limit number # TODO: definition of parameter
----@param class_id? number # TODO: definition of parameter
+---@param new_creation_limit number #
+---@param class_id? number #
 function Client:SetBotCreationLimit(new_creation_limit, class_id) end
 
----@param new_required_level number # TODO: definition of parameter
----@param class_id? number # TODO: definition of parameter
+---@param new_required_level number #
+---@param class_id? number #
 function Client:SetBotRequiredLevel(new_required_level, class_id) end
 
----@param new_spawn_limit number # TODO: definition of parameter
----@param class_id? number # TODO: definition of parameter
+---@param new_spawn_limit number #
+---@param class_id? number #
 function Client:SetBotSpawnLimit(new_spawn_limit, class_id) end
 
----@param max_level number # TODO: definition of parameter
+---@param max_level number #
 function Client:SetClientMaxLevel(max_level) end
 
----@param in_hunger number # TODO: definition of parameter
----@param in_thirst number # TODO: definition of parameter
+---@param in_hunger number #
+---@param in_thirst number #
 function Client:SetConsumption(in_hunger, in_thirst) end
 
----@param v number # TODO: definition of parameter
+---@param v number #
 function Client:SetDeity(v) end
 
----@param c number # TODO: definition of parameter
+---@param c number #
 function Client:SetDuelTarget(c) end
 
----@param v boolean # TODO: definition of parameter
+---@param v boolean #
 function Client:SetDueling(v) end
 
----@param set_exp number # TODO: definition of parameter
----@param set_aaxp number # TODO: definition of parameter
----@param resexp? boolean # TODO: definition of parameter
+---@param set_exp number #
+---@param set_aaxp number #
+---@param resexp? boolean #
 function Client:SetEXP(set_exp, set_aaxp, resexp) end
 
----@param is_exp_enabled boolean # TODO: definition of parameter
+---@param is_exp_enabled boolean #
 function Client:SetEXPEnabled(is_exp_enabled) end
 
----@param zone_id number # TODO: definition of parameter
----@param exp_modifier number # TODO: definition of parameter
----@param instance_version? number # TODO: definition of parameter
+---@param zone_id number #
+---@param exp_modifier number #
+---@param instance_version? number #
 function Client:SetEXPModifier(zone_id, exp_modifier, instance_version) end
 
----@param value number # TODO: definition of parameter
+---@param value number #
 function Client:SetEbonCrystals(value) end
 
----@param endur number # TODO: definition of parameter
+---@param endur number #
 function Client:SetEndurance(endur) end
 
----@param value number # TODO: definition of parameter
+---@param value number #
 function Client:SetEnvironmentDamageModifier(value) end
 
 ---@param character_id number # Character ID
@@ -1172,108 +1181,108 @@ function Client:SetEnvironmentDamageModifier(value) end
 function Client:SetFactionLevel(character_id, npc_id) end
 
 ---@param character_id number # Character ID
----@param faction_id number # TODO: definition of parameter
----@param value number # TODO: definition of parameter
----@param temp number # TODO: definition of parameter
+---@param faction_id number #
+---@param value number #
+---@param temp number #
 function Client:SetFactionLevel2(character_id, faction_id, value, temp) end
 
----@param v boolean # TODO: definition of parameter
+---@param v boolean #
 function Client:SetFeigned(v) end
 
----@param v boolean # TODO: definition of parameter
+---@param v boolean #
 function Client:SetGM(v) end
 
----@param new_status number # TODO: definition of parameter
+---@param new_status number #
 function Client:SetGMStatus(new_status) end
 
----@param hide_me_state boolean # TODO: definition of parameter
+---@param hide_me_state boolean #
 function Client:SetHideMe(hide_me_state) end
 
----@param id number # TODO: definition of parameter
+---@param id number #
 function Client:SetHorseId(id) end
 
----@param in_hunger number # TODO: definition of parameter
+---@param in_hunger number #
 function Client:SetHunger(in_hunger) end
 
----@param exemption_amount number # TODO: definition of parameter
+---@param exemption_amount number #
 function Client:SetIPExemption(exemption_amount) end
 
----@param value boolean # TODO: definition of parameter
+---@param value boolean #
 function Client:SetInvulnerableEnvironmentDamage(value) end
 
----@param language number # TODO: definition of parameter
----@param value number # TODO: definition of parameter
+---@param language number #
+---@param value number #
 function Client:SetLanguageSkill(language, value) end
 
----@param slot_id number # TODO: definition of parameter
----@param item_id number # TODO: definition of parameter
+---@param slot_id number #
+---@param item_id number #
 function Client:SetMaterial(slot_id, item_id) end
 
----@param zone_id number # TODO: definition of parameter
+---@param zone_id number #
 function Client:SetPEQZoneFlag(zone_id) end
 
----@param v boolean # TODO: definition of parameter
+---@param v boolean #
 function Client:SetPVP(v) end
 
----@param model_id number # TODO: definition of parameter
+---@param model_id number #
 function Client:SetPrimaryWeaponOrnamentation(model_id) end
 
----@param value number # TODO: definition of parameter
+---@param value number #
 function Client:SetRadiantCrystals(value) end
 
----@param model_id number # TODO: definition of parameter
+---@param model_id number #
 function Client:SetSecondaryWeaponOrnamentation(model_id) end
 
----@param skill_id number # TODO: definition of parameter
----@param value number # TODO: definition of parameter
+---@param skill_id number #
+---@param value number #
 function Client:SetSkill(skill_id, value) end
 
----@param skill number # TODO: definition of parameter
+---@param skill number #
 function Client:SetSkillPoints(skill) end
 
----@param spell_id number # TODO: definition of parameter
----@param duration? number # TODO: definition of parameter
----@param allow_pets? boolean # TODO: definition of parameter
----@param allow_bots? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param duration? number #
+---@param allow_pets? boolean #
+---@param allow_bots? boolean #
 function Client:SetSpellDuration(spell_id, duration, allow_pets, allow_bots) end
 
----@param spell_id number # TODO: definition of parameter
----@param duration? number # TODO: definition of parameter
----@param allow_pets? boolean # TODO: definition of parameter
----@param allow_bots? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param duration? number #
+---@param allow_pets? boolean #
+---@param allow_bots? boolean #
 function Client:SetSpellDurationGroup(spell_id, duration, allow_pets, allow_bots) end
 
----@param spell_id number # TODO: definition of parameter
----@param duration? number # TODO: definition of parameter
----@param allow_pets? boolean # TODO: definition of parameter
----@param is_raid_group_only? boolean # TODO: definition of parameter
----@param allow_bots? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param duration? number #
+---@param allow_pets? boolean #
+---@param is_raid_group_only? boolean #
+---@param allow_bots? boolean #
 function Client:SetSpellDurationRaid(spell_id, duration, allow_pets, is_raid_group_only, allow_bots) end
 
----@param zone_id number # TODO: definition of parameter
----@param x? number # TODO: definition of parameter
----@param y? number # TODO: definition of parameter
----@param z? number # TODO: definition of parameter
+---@param zone_id number #
+---@param x? number #
+---@param y? number #
+---@param z? number #
 function Client:SetStartZone(zone_id, x, y, z) end
 
----@param type number # TODO: definition of parameter
----@param value number # TODO: definition of parameter
+---@param type number #
+---@param value number #
 function Client:SetStats(type, value) end
 
----@param in_thirst number # TODO: definition of parameter
+---@param in_thirst number #
 function Client:SetThirst(in_thirst) end
 
----@param slot_id number # TODO: definition of parameter
----@param color number # TODO: definition of parameter
+---@param slot_id number #
+---@param color number #
 function Client:SetTint(slot_id, color) end
 
----@param text string # TODO: definition of parameter
+---@param text string #
 function Client:SetTitleSuffix(text) end
 
----@param zone_id number # TODO: definition of parameter
+---@param zone_id number #
 function Client:SetZoneFlag(zone_id) end
 
----@param signal_id number # TODO: definition of parameter
+---@param signal_id number #
 function Client:Signal(signal_id) end
 
 function Client:Sit() end
@@ -1291,19 +1300,19 @@ function Client:Stand() end
 ---@field augment_five number
 ---@field augment_six number
 
----@param bag_item_id number # TODO: definition of parameter
----@param bag_items_table BagItemTable # TODO: definition of parameter
+---@param bag_item_id number #
+---@param bag_items_table BagItemTable #
 function Client:SummonBaggedItems(bag_item_id, bag_items_table) end
 
----@param item_id number # TODO: definition of parameter
----@param charges? number # TODO: definition of parameter
----@param aug1? number # TODO: definition of parameter
----@param aug2? number # TODO: definition of parameter
----@param aug3? number # TODO: definition of parameter
----@param aug4? number # TODO: definition of parameter
----@param aug5? number # TODO: definition of parameter
----@param attuned? boolean # TODO: definition of parameter
----@param to_slot? number # TODO: definition of parameter
+---@param item_id number #
+---@param charges? number #
+---@param aug1? number #
+---@param aug2? number #
+---@param aug3? number #
+---@param aug4? number #
+---@param aug5? number #
+---@param attuned? boolean #
+---@param to_slot? number #
 function Client:SummonItem(item_id, charges, aug1, aug2, aug3, aug4, aug5, attuned, to_slot) end
 
 
@@ -1314,25 +1323,25 @@ function Client:SummonCursorItem(item_id, charges) end
 ---@return boolean
 function Client:TGB() end
 
----@param copper number # TODO: definition of parameter
----@param update_client? number # TODO: definition of parameter (and type this)
+---@param copper number #
+---@param update_client? number #
 ---@return boolean
 function Client:TakeMoneyFromPP(copper, update_client) end
 
----@param platinum number # TODO: definition of parameter
----@param update_client? number # TODO: definition of parameter (and type this)
+---@param platinum number #
+---@param update_client? number #
 ---@return boolean
 function Client:TakePlatinum(platinum, update_client) end
 
 ---@param task_array number[] # an array of task_ids
----@param ignore_cooldown? boolean # TODO: definition of parameter
+---@param ignore_cooldown? boolean #
 function Client:TaskSelector(task_array, ignore_cooldown) end
 
 ---@param character_id number # Character ID
 ---@return boolean
 function Client:TeleportGroupToPlayerByCharID(character_id) end
 
----@param player_name string # TODO: definition of parameter
+---@param player_name string #
 ---@return boolean
 function Client:TeleportGroupToPlayerByName(player_name) end
 
@@ -1340,7 +1349,7 @@ function Client:TeleportGroupToPlayerByName(player_name) end
 ---@return boolean
 function Client:TeleportRaidToPlayerByCharID(character_id) end
 
----@param player_name string # TODO: definition of parameter
+---@param player_name string #
 ---@return boolean
 function Client:TeleportRaidToPlayerByName(player_name) end
 
@@ -1348,73 +1357,73 @@ function Client:TeleportRaidToPlayerByName(player_name) end
 ---@return boolean
 function Client:TeleportToPlayerByCharID(character_id) end
 
----@param player_name string # TODO: definition of parameter
+---@param player_name string #
 ---@return boolean
 function Client:TeleportToPlayerByName(player_name) end
 
 ---@return boolean
 function Client:Thirsty() end
 
----@param itemid number # TODO: definition of parameter
+---@param itemid number #
 function Client:TrainDisc(itemid) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 function Client:TrainDiscBySpellID(spell_id) end
 
 function Client:UnFreeze() end
 
 function Client:Undye() end
 
----@param slot number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param slot number #
+---@param update_client? boolean #
 function Client:UnmemSpell(slot, update_client) end
 
----@param update_client? boolean # TODO: definition of parameter
+---@param update_client? boolean #
 function Client:UnmemSpellAll(update_client) end
 
----@param spell_id number # TODO: definition of parameter
+---@param spell_id number #
 function Client:UnmemSpellBySpellID(spell_id) end
 
----@param slot number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param slot number #
+---@param update_client? boolean #
 function Client:UnscribeSpell(slot, update_client) end
 
----@param update_client? boolean # TODO: definition of parameter
+---@param update_client? boolean #
 function Client:UnscribeSpellAll(update_client) end
 
----@param spell_id number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param update_client? boolean #
 function Client:UnscribeSpellBySpellID(spell_id, update_client) end
 
----@param slot number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param slot number #
+---@param update_client? boolean #
 function Client:UntrainDisc(slot, update_client) end
 
----@param update_client? boolean # TODO: definition of parameter
+---@param update_client? boolean #
 function Client:UntrainDiscAll(update_client) end
 
----@param spell_id number # TODO: definition of parameter
----@param update_client? boolean # TODO: definition of parameter
+---@param spell_id number #
+---@param update_client? boolean #
 function Client:UntrainDiscBySpellID(spell_id, update_client) end
 
----@param from_database? boolean # TODO: definition of parameter
+---@param from_database? boolean #
 function Client:UpdateAdmin(from_database) end
 
----@param points number # TODO: definition of parameter
----@param type number # TODO: definition of parameter
+---@param points number #
+---@param type number #
 function Client:UpdateGroupAAs(points, type) end
 
----@param theme_id number # TODO: definition of parameter
----@param points number # TODO: definition of parameter
+---@param theme_id number #
+---@param points number #
 function Client:UpdateLDoNPoints(theme_id, points) end
 
----@param task number # TODO: definition of parameter
----@param activity number # TODO: definition of parameter
----@param count number # TODO: definition of parameter
+---@param task number #
+---@param activity number #
+---@param count number #
 function Client:UpdateTaskActivity(task, activity, count) end
 
----@param spell_id number # TODO: definition of parameter
----@param target_id number # TODO: definition of parameter
+---@param spell_id number #
+---@param target_id number #
 ---@return boolean
 function Client:UseDiscipline(spell_id, target_id) end
 

@@ -8,18 +8,18 @@ Door = {}
 
 function Door:CreateDatabaseEntry() end
 
----@param sender Mob # TODO: definition of parameter
----@param alt_mode boolean # TODO: definition of parameter
+---@param sender Mob #
+---@param alt_mode boolean #
 function Door:ForceClose(sender, alt_mode) end
 
----@param sender Mob # TODO: definition of parameter
+---@param sender Mob #
 function Door:ForceClose(sender) end
 
----@param sender? Mob # TODO: definition of parameter
----@param alt_mode? boolean # TODO: definition of parameter
+---@param sender? Mob #
+---@param alt_mode? boolean #
 function Door:ForceOpen(sender, alt_mode) end
 
----@param sender Mob # TODO: definition of parameter
+---@param sender Mob #
 function Door:ForceOpen(sender) end
 
 ---@return boolean
@@ -64,43 +64,43 @@ function Door:GetY() end
 ---@return number
 function Door:GetZ() end
 
----@param flag boolean # TODO: definition of parameter
+---@param flag boolean #
 function Door:SetDisableTimer(flag) end
 
----@param name string # TODO: definition of parameter
+---@param name string #
 function Door:SetDoorName(name) end
 
----@param h number # TODO: definition of parameter
+---@param h number #
 function Door:SetHeading(h) end
 
----@param incline number # TODO: definition of parameter
+---@param incline number #
 function Door:SetIncline(incline) end
 
----@param key number # TODO: definition of parameter
+---@param key number #
 function Door:SetKeyItem(key) end
 
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
+---@param x number #
+---@param y number #
+---@param z number #
 function Door:SetLocation(x, y, z) end
 
----@param pick number # TODO: definition of parameter
+---@param pick number #
 function Door:SetLockPick(pick) end
 
----@param type number # TODO: definition of parameter
+---@param type number #
 function Door:SetNoKeyring(type) end
 
----@param type number # TODO: definition of parameter
+---@param type number #
 function Door:SetOpenType(type) end
 
----@param sz number # TODO: definition of parameter
+---@param sz number #
 function Door:SetSize(sz) end
 
----@param x number # TODO: definition of parameter
+---@param x number #
 function Door:SetX(x) end
 
----@param y number # TODO: definition of parameter
+---@param y number #
 function Door:SetY(y) end
 
----@param z number # TODO: definition of parameter
+---@param z number #
 function Door:SetZ(z) end

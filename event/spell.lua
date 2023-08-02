@@ -5,9 +5,9 @@
 ---@field target Mob # Target of spell
 ---@field spell_id number # spell id that triggered
 ---@field caster_id number # caster entity id of who casted the spell
----@field tics_remaining string # TODO: definition of field (and proper typing)
----@field caster_level number # TODO: definition of field (and proper typing)
----@field buff_slot string # TODO: definition of field (and proper typing)
+---@field tics_remaining string # 
+---@field caster_level number # 
+---@field buff_slot string # 
 ---@field spell Spell|nil # Spell instance that was used
 
 ---@alias SpellEventSpellBuffTic SpellEvent

@@ -16,10 +16,10 @@ function Spell:AllowRest() end
 
 function Spell:AoeRange() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:Base(i) end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:Base2(i) end
 
 function Spell:BaseDiff() end
@@ -42,18 +42,18 @@ function Spell:CastTime() end
 
 function Spell:CastingAnim() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:Classes(i) end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:ComponentCounts(i) end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:Components(i) end
 
 function Spell:DamageShieldType() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:Deities(i) end
 
 function Spell:DescNum() end
@@ -68,7 +68,7 @@ function Spell:DispelFlag() end
 
 function Spell:EffectDescNum() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:EffectID(i) end
 
 function Spell:EndurCost() end
@@ -79,7 +79,7 @@ function Spell:EndurUpkeep() end
 
 function Spell:EnvironmentType() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:Formula(i) end
 
 function Spell:GetZoneType() end
@@ -94,7 +94,7 @@ function Spell:InCombat() end
 
 function Spell:Mana() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:Max(i) end
 
 function Spell:MaxDist() end
@@ -117,7 +117,7 @@ function Spell:Name() end
 
 function Spell:NimbusEffect() end
 
----@param i number # TODO: definition of parameter (and type this)
+---@param i number # 
 function Spell:NoexpendReagent(i) end
 
 function Spell:NumHits() end

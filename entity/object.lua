@@ -10,20 +10,20 @@ function Object:ClearUser() end
 
 function Object:Close() end
 
----@param reset_state? boolean # TODO: definition of parameter
+---@param reset_state? boolean #
 function Object:Delete(reset_state) end
 
----@param index number # TODO: definition of parameter
+---@param index number #
 function Object:DeleteItem(index) end
 
 function Object:Depop() end
 
----@param name string # TODO: definition of parameter
+---@param name string #
 function Object:EntityVariableExists(name) end
 
 function Object:GetDBID() end
 
----@param name string # TODO: definition of parameter (and type this)
+---@param name string #
 function Object:GetEntityVariable(name) end
 
 function Object:GetHeading() end
@@ -50,40 +50,40 @@ function Object:Repop() end
 
 function Object:Save() end
 
----@param name string # TODO: definition of parameter
----@param value string # TODO: definition of parameter
+---@param name string #
+---@param value string #
 function Object:SetEntityVariable(name, value) end
 
----@param h number # TODO: definition of parameter
+---@param h number #
 function Object:SetHeading(h) end
 
----@param user number # TODO: definition of parameter
+---@param user number #
 function Object:SetID(user) end
 
----@param icon number # TODO: definition of parameter
+---@param icon number #
 function Object:SetIcon(icon) end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 function Object:SetItemID(item_id) end
 
----@param x number # TODO: definition of parameter
----@param y number # TODO: definition of parameter
----@param z number # TODO: definition of parameter
+---@param x number #
+---@param y number #
+---@param z number #
 function Object:SetLocation(x, y, z) end
 
----@param name string # TODO: definition of parameter
+---@param name string #
 function Object:SetModelName(name) end
 
----@param type number # TODO: definition of parameter
+---@param type number #
 function Object:SetType(type) end
 
----@param x number # TODO: definition of parameter
+---@param x number #
 function Object:SetX(x) end
 
----@param y number # TODO: definition of parameter
+---@param y number #
 function Object:SetY(y) end
 
----@param z number # TODO: definition of parameter
+---@param z number #
 function Object:SetZ(z) end
 
 function Object:StartDecay() end

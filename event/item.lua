@@ -3,8 +3,8 @@
 ---@class ItemEventAugmentInsert
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field item string # TODO: definition of field (and proper typing)
----@field slot_id number # TODO: definition of field (and proper typing)
+---@field item string # 
+---@field slot_id number # 
 
 --- event_augment_insert is a Item event when augmentinsert occurs.
 ---@param e ItemEventAugmentInsert
@@ -13,8 +13,8 @@ function event_augment_insert(e) end
 ---@class ItemEventAugmentItem
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field aug string # TODO: definition of field (and proper typing)
----@field slot_id number # TODO: definition of field (and proper typing)
+---@field aug string # 
+---@field slot_id number # 
 
 --- event_augment_item is a Item event when augmentitem occurs.
 ---@param e ItemEventAugmentItem
@@ -23,9 +23,9 @@ function event_augment_item(e) end
 ---@class ItemEventAugmentRemove
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field item string # TODO: definition of field (and proper typing)
----@field slot_id number # TODO: definition of field (and proper typing)
----@field destroyed string # TODO: definition of field (and proper typing)
+---@field item string # 
+---@field slot_id number # 
+---@field destroyed string # 
 
 --- event_augment_remove is a Item event when augmentremove occurs.
 ---@param e ItemEventAugmentRemove
@@ -50,7 +50,7 @@ function event_drop_item(e) end
 ---@class ItemEventEquipItem
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field slot_id number # TODO: definition of field (and proper typing)
+---@field slot_id number # 
 
 --- event_equip_item is a Item event when equipitem occurs.
 ---@param e ItemEventEquipItem
@@ -59,7 +59,7 @@ function event_equip_item(e) end
 ---@class ItemEventItemClick
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field slot_id number # TODO: definition of field (and proper typing)
+---@field slot_id number # 
 
 --- event_item_click is a Item event when itemclick occurs.
 ---@param e ItemEventItemClick
@@ -68,7 +68,7 @@ function event_item_click(e) end
 ---@class ItemEventItemClickCast
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field slot_id number # TODO: definition of field (and proper typing)
+---@field slot_id number # 
 
 --- event_item_click_cast is a Item event when itemclickcast occurs.
 ---@param e ItemEventItemClickCast
@@ -110,7 +110,7 @@ function event_scale_calc(e) end
 ---@class ItemEventTimer
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field timer string # TODO: definition of field (and proper typing)
+---@field timer string # 
 
 --- event_timer is a Item event when timer occurs.
 ---@param e ItemEventTimer
@@ -119,8 +119,8 @@ function event_timer(e) end
 ---@class ItemEventUnaugmentItem
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field aug string # TODO: definition of field (and proper typing)
----@field slot_id number # TODO: definition of field (and proper typing)
+---@field aug string # 
+---@field slot_id number # 
 
 --- event_unaugment_item is a Item event when unaugmentitem occurs.
 ---@param e ItemEventUnaugmentItem
@@ -129,7 +129,7 @@ function event_unaugment_item(e) end
 ---@class ItemEventUnequipItem
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field slot_id number # TODO: definition of field (and proper typing)
+---@field slot_id number # 
 
 --- event_unequip_item is a Item event when unequipitem occurs.
 ---@param e ItemEventUnequipItem
@@ -138,7 +138,7 @@ function event_unequip_item(e) end
 ---@class ItemEventWeaponProc
 ---@field self ItemInst # item that triggered the event
 ---@field owner Client # client related to the item event
----@field target string # TODO: definition of field (and proper typing)
+---@field target string # 
 ---@field spell Spell|nil # Spell instance that was used
 
 --- event_weapon_proc is a Item event when weaponproc occurs.

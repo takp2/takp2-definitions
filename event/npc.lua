@@ -108,7 +108,7 @@ function event_death(e) end
 ---@field killer_id number # Entity ID of mob that killed NPC
 ---@field damage number # Final damage amount that was killing blow
 ---@field spell Spell|nil # Spell instance that was used
----@field skill_id number # TODO: definition of field (and proper typing)
+---@field skill_id number # 
 ---@field corpse Corpse|nil # Corpse of dying NPC
 ---@field killed Mob|nil # Killer mob, if any
 
@@ -122,7 +122,7 @@ function event_death_complete(e) end
 ---@field killer_id number # Entity ID of mob that killed NPC
 ---@field damage number # Final damage amount that was killing blow
 ---@field spell Spell|nil # Spell instance that was used
----@field skill_id number # TODO: definition of field (and proper typing)
+---@field skill_id number # 
 ---@field corpse Corpse|nil # Corpse of dying NPC
 ---@field killed Mob|nil # Killer mob, if any
 
@@ -141,8 +141,8 @@ function event_enter(e) end
 
 ---@class NPCEventEnterArea
 ---@field self NPC # NPC who is handling the event
----@field area_id number # TODO: definition of field (and proper typing)
----@field area_type string # TODO: definition of field (and proper typing)
+---@field area_id number # 
+---@field area_type string # 
 
 --- event_enter_area is a NPC event when enterarea occurs.
 ---@param e NPCEventEnterArea
@@ -195,8 +195,8 @@ function event_killed_merit(e) end
 
 ---@class NPCEventLeaveArea
 ---@field self NPC # NPC who is handling the event
----@field area_id number # TODO: definition of field (and proper typing)
----@field area_type string # TODO: definition of field (and proper typing)
+---@field area_id number # 
+---@field area_type string # 
 
 --- event_leave_area is a NPC event when leavearea occurs.
 ---@param e NPCEventLeaveArea
@@ -205,7 +205,7 @@ function event_leave_area(e) end
 ---@class NPCEventLootZone
 ---@field self NPC # NPC who is handling the event
 ---@field other Client # Client that triggered the event
----@field item string # TODO: definition of field (and proper typing)
+---@field item string # 
 ---@field corpse Corpse|nil # Corpse of dying NPC
 
 --- event_loot_zone is a NPC event when lootzone occurs.
@@ -250,6 +250,7 @@ function event_say(e) end
 ---@class NPCEventSignal
 ---@field self NPC # NPC who is handling the event
 ---@field signal number # number to uniquely identify signal
+---@field data string # data passed with signal
 
 --- event_signal triggers when an NPC receives a signal via eq.signal() [docs](https://docs.eqemu.io/quest-api/events/#event_slay)
 ---@param e NPCEventSignal

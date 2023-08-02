@@ -13,18 +13,18 @@ function StatBonuses:AGI() end
 ---@return number
 function StatBonuses:AGICapMod() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 ---@return number
 function StatBonuses:AStacker(idx) end
 
 ---@return number
 function StatBonuses:ATK() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 ---@return number
 function StatBonuses:AbsorbMagicAtt(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 ---@return number
 function StatBonuses:Accuracy(idx) end
 
@@ -46,11 +46,11 @@ function StatBonuses:AntiGate() end
 ---@return number
 function StatBonuses:ArcheryDamageModifier() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 ---@return number
 function StatBonuses:Assassinate(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 ---@return number
 function StatBonuses:AssassinateLevel(idx) end
 
@@ -63,7 +63,7 @@ function StatBonuses:AvoidMeleeChance() end
 ---@return number
 function StatBonuses:AvoidMeleeChanceEffect() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 ---@return number
 function StatBonuses:BStacker(idx) end
 
@@ -92,7 +92,7 @@ function StatBonuses:CR() end
 
 function StatBonuses:CRCapMod() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:CStacker(idx) end
 
 function StatBonuses:ChannelChanceItems() end
@@ -113,7 +113,7 @@ function StatBonuses:CorrupCapMod() end
 
 function StatBonuses:CrippBlowChance() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:CritDmgMod(idx) end
 
 function StatBonuses:CriticalDoTChance() end
@@ -126,7 +126,7 @@ function StatBonuses:CriticalHealDecay() end
 
 function StatBonuses:CriticalHealOverTime() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:CriticalHitChance(idx) end
 
 function StatBonuses:CriticalMend() end
@@ -147,13 +147,13 @@ function StatBonuses:DSMitigation() end
 
 function StatBonuses:DSMitigationOffHand() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:DStacker(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:DamageModifier(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:DamageModifier2(idx) end
 
 function StatBonuses:DamageShield() end
@@ -162,7 +162,7 @@ function StatBonuses:DamageShieldSpellID() end
 
 function StatBonuses:DamageShieldType() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:DeathSave(idx) end
 
 function StatBonuses:DelayDeath() end
@@ -171,7 +171,7 @@ function StatBonuses:DistanceRemoval() end
 
 function StatBonuses:DivineAura() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:DivineSaveChance(idx) end
 
 function StatBonuses:DoTShielding() end
@@ -190,7 +190,7 @@ function StatBonuses:DoubleSpecialAttack() end
 
 function StatBonuses:DualWieldChance() end
 
----@param idx number # TODO: definition of parameter (and type this)
+---@param idx number #
 function StatBonuses:EndPercCap(idx) end
 
 function StatBonuses:Endurance() end
@@ -211,18 +211,18 @@ function StatBonuses:Fearless() end
 
 function StatBonuses:FeignedCastOnChance() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:FinishingBlow(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:FinishingBlowLvl(idx) end
 
 function StatBonuses:FlurryChance() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:FocusEffects(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:FocusEffectsWorn(idx) end
 
 function StatBonuses:ForageAdditionalItems() end
@@ -239,7 +239,7 @@ function StatBonuses:GetXPRateMod() end
 
 function StatBonuses:GiveDoubleAttack() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:GiveDoubleRiposte(idx) end
 
 function StatBonuses:GivePetGroupTarget() end
@@ -248,17 +248,17 @@ function StatBonuses:GravityEffect() end
 
 function StatBonuses:HP() end
 
----@param idx number # TODO: definition of parameter (and type this)
+---@param idx number #
 function StatBonuses:HPPercCap(idx) end
 
 function StatBonuses:HPRegen() end
 
 function StatBonuses:HPToManaConvert() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:HSLevel(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:HeadShot(idx) end
 
 function StatBonuses:HealAmt() end
@@ -293,7 +293,7 @@ function StatBonuses:HeroicWIS() end
 
 function StatBonuses:HitChance() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:HitChanceEffect(idx) end
 
 function StatBonuses:HundredHands() end
@@ -309,7 +309,7 @@ function StatBonuses:ImmuneToFlee() end
 
 function StatBonuses:ImprovedReclaimEnergy() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:ImprovedTaunt(idx) end
 
 function StatBonuses:IncreaseBlockChance() end
@@ -328,7 +328,7 @@ function StatBonuses:ItemHPRegenCap() end
 
 function StatBonuses:ItemManaRegenCap() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:LimitToSkill(idx) end
 
 function StatBonuses:MR() end
@@ -339,10 +339,10 @@ function StatBonuses:MagicWeapon() end
 
 function StatBonuses:Mana() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:ManaAbsorbPercentDamage(idx) end
 
----@param idx number # TODO: definition of parameter (and type this)
+---@param idx number #
 function StatBonuses:ManaPercCap(idx) end
 
 function StatBonuses:ManaRegen() end
@@ -361,31 +361,31 @@ function StatBonuses:MeleeMitigation() end
 
 function StatBonuses:MeleeMitigationEffect() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:MeleeRune(idx) end
 
 function StatBonuses:MeleeSkillCheck() end
 
 function StatBonuses:MeleeSkillCheckSkill() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:MeleeThresholdGuard(idx) end
 
 function StatBonuses:Metabolism() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:MinDamageModifier(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:MitigateDotRune(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:MitigateMeleeRune(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:MitigateSpellRune(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:NegateAttacks(idx) end
 
 function StatBonuses:NegateEffects() end
@@ -398,7 +398,7 @@ function StatBonuses:OffhandRiposteFail() end
 
 function StatBonuses:PC_Pet_Flurry() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:PC_Pet_Rampage(idx) end
 
 function StatBonuses:PR() end
@@ -425,12 +425,12 @@ function StatBonuses:ProcChance() end
 
 function StatBonuses:ProcChanceSPA() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:RaiseSkillCap(idx) end
 
 function StatBonuses:ReduceFallDamage() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:ReduceTradeskillFail(idx) end
 
 function StatBonuses:ResistFearChance() end
@@ -445,12 +445,12 @@ function StatBonuses:ReverseDamageShieldType() end
 
 function StatBonuses:RiposteChance() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:Root(idx) end
 
 function StatBonuses:RootBreakChance() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SEResist(idx) end
 
 function StatBonuses:STA() end
@@ -477,28 +477,28 @@ function StatBonuses:ShieldEquipDmgMod() end
 
 function StatBonuses:ShroudofStealth() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SkillAttackProc(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SkillDamageAmount(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SkillDamageAmount2(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SkillDmgTaken(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SkillProc(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SkillProcSuccess(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SkillReuseTime(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SlayUndead(idx) end
 
 function StatBonuses:SongRange() end
@@ -511,20 +511,20 @@ function StatBonuses:SpellDamageShield() end
 
 function StatBonuses:SpellDmg() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SpellOnDeath(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SpellOnKill(idx) end
 
 function StatBonuses:SpellProcChance() end
 
 function StatBonuses:SpellShield() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SpellThresholdGuard(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:SpellTriggers(idx) end
 
 function StatBonuses:StrikeThrough() end
@@ -583,10 +583,10 @@ function StatBonuses:reflect_chance() end
 
 function StatBonuses:singingMod() end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:skillmod(idx) end
 
----@param idx number # TODO: definition of parameter
+---@param idx number #
 function StatBonuses:skillmodmax(idx) end
 
 function StatBonuses:songModCap() end

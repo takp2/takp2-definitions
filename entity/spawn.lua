@@ -29,6 +29,9 @@ function Spawn:GetID() end
 ---@return number
 function Spawn:GetKillCount() end
 
+---@return number
+function Spawn:GetNPC() end
+
 function Spawn:GetSpawnCondition() end
 
 function Spawn:GetVariance() end
@@ -46,7 +49,7 @@ function Spawn:LoadGrid() end
 
 function Spawn:NPCPointerValid() end
 
----@param delay? number # TODO: definition of parameter
+---@param delay? number #
 function Spawn:Repop(delay) end
 
 function Spawn:Reset() end
@@ -54,19 +57,19 @@ function Spawn:Reset() end
 ---@return number
 function Spawn:RespawnTimer() end
 
----@param nid number # TODO: definition of parameter
+---@param nid number #
 function Spawn:SetCurrentNPCID(nid) end
 
----@param n NPC # TODO: definition of parameter
+---@param n NPC #
 function Spawn:SetNPCPointer(n) end
 
----@param newrespawntime number # TODO: definition of parameter
+---@param newrespawntime number #
 function Spawn:SetRespawnTimer(newrespawntime) end
 
----@param duration number # TODO: definition of parameter
+---@param duration number #
 function Spawn:SetTimer(duration) end
 
----@param newvariance number # TODO: definition of parameter
+---@param newvariance number #
 function Spawn:SetVariance(newvariance) end
 
 ---@return number

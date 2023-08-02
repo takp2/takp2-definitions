@@ -6,30 +6,30 @@
 ---@field valid boolean # returns false when a corpse is invalid
 Corpse = {}
 
----@param itemnum number # TODO: definition of parameter
----@param charges number # TODO: definition of parameter
----@param slot? number # TODO: definition of parameter
----@param aug1? number # TODO: definition of parameter
----@param aug2? number # TODO: definition of parameter
----@param aug3? number # TODO: definition of parameter
----@param aug4? number # TODO: definition of parameter
----@param aug5? number # TODO: definition of parameter
+---@param itemnum number #
+---@param charges number #
+---@param slot? number #
+---@param aug1? number #
+---@param aug2? number #
+---@param aug3? number #
+---@param aug4? number #
+---@param aug5? number #
 function Corpse:AddItem(itemnum, charges, slot, aug1, aug2, aug3, aug4, aug5) end
 
----@param who Mob # TODO: definition of parameter
+---@param who Mob #
 function Corpse:AddLooter(who) end
 
----@param them Mob # TODO: definition of parameter
----@param slot number # TODO: definition of parameter
+---@param them Mob #
+---@param slot number #
 function Corpse:AllowMobLoot(them, slot) end
 
 function Corpse:Bury() end
 
----@param charid number # TODO: definition of parameter
+---@param charid number #
 ---@return boolean
 function Corpse:CanMobLoot(charid) end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return number
 function Corpse:CountItem(item_id) end
 
@@ -52,14 +52,14 @@ function Corpse:GetDBID() end
 ---@return number
 function Corpse:GetDecayTime() end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return number
 function Corpse:GetFirstSlotByItemID(item_id) end
 
 ---@return number
 function Corpse:GetGold() end
 
----@param loot_slot number # TODO: definition of parameter
+---@param loot_slot number #
 ---@return number
 function Corpse:GetItemIDBySlot(loot_slot) end
 
@@ -75,11 +75,11 @@ function Corpse:GetPlatinum() end
 ---@return number
 function Corpse:GetSilver() end
 
----@param equipSlot number # TODO: definition of parameter
+---@param equipSlot number #
 ---@return number
 function Corpse:GetWornItem(equipSlot) end
 
----@param item_id number # TODO: definition of parameter
+---@param item_id number #
 ---@return boolean
 function Corpse:HasItem(item_id) end
 
@@ -96,11 +96,11 @@ function Corpse:Lock() end
 
 function Corpse:RemoveCash() end
 
----@param lootslot number # TODO: definition of parameter
+---@param lootslot number #
 function Corpse:RemoveItem(lootslot) end
 
----@param item_id number # TODO: definition of parameter
----@param quantity? number # TODO: definition of parameter
+---@param item_id number #
+---@param quantity? number #
 function Corpse:RemoveItemByID(item_id, quantity) end
 
 function Corpse:ResetDecayTimer() end
@@ -110,18 +110,18 @@ function Corpse:ResetLooter() end
 ---@return boolean
 function Corpse:Save() end
 
----@param copper number # TODO: definition of parameter
----@param silver number # TODO: definition of parameter
----@param gold number # TODO: definition of parameter
----@param platinum number # TODO: definition of parameter
+---@param copper number #
+---@param silver number #
+---@param gold number #
+---@param platinum number #
 function Corpse:SetCash(copper, silver, gold, platinum) end
 
----@param decaytime number # TODO: definition of parameter
+---@param decaytime number #
 function Corpse:SetDecayTimer(decaytime) end
 
----@param client Client # TODO: definition of parameter
----@param spell number # TODO: definition of parameter (and type this)
----@param checkdistance number # TODO: definition of parameter (and type this)
+---@param client Client #
+---@param spell number #
+---@param checkdistance number #
 ---@return boolean
 function Corpse:Summon(client, spell, checkdistance) end
 
